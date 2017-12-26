@@ -1,4 +1,4 @@
-import { compose } from "./compose";
+import { compose } from "."
 
 describe("compose function", () => {
   it("returns undefined if there is no functions and arguments", () => {

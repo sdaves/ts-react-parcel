@@ -1,5 +1,5 @@
-const tsc = require("typescript");
-const tsConfig = require("../tsconfig.json");
+const tsc = require("typescript")
+const tsConfig = require("../../tsconfig.json")
 
 module.exports = {
   process(src, path) {
@@ -8,4 +8,4 @@ module.exports = {
     }
     return src;
   },
-};
+}
