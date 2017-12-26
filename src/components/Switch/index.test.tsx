@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 import { shallow } from "enzyme";
-import Switch from "../Switch";
+import Switch from ".";
 
 describe("Switch component", () => {
   it("renders without any props", () => {

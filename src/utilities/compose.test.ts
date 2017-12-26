@@ -1,4 +1,4 @@
-import { compose } from "../compose";
+import { compose } from "./compose";
 
 describe("compose function", () => {
   it("returns undefined if there is no functions and arguments", () => {
@@ -30,4 +30,12 @@ describe("compose function", () => {
     expect(fn2).toHaveBeenCalledWith(...args);
     expect(fn3).toHaveBeenCalledWith(...args);
   });
+  
+  it('passes data down the line', () => {
+    var found = []
+    const double = x => found.push(x)
+    const add5 = x => found.push(x)
+    compose(double, add5)(2)
+    expect(found).toEqual([2, 2])
+  })
 });

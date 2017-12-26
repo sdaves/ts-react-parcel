@@ -1,6 +1,6 @@
 import * as React from "react";
 import { mount } from "enzyme";
-import App from "../App";
+import App from ".";
 import Switch from "../Switch";
 
 function sel(testId: string): string {

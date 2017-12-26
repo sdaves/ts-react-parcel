@@ -1,6 +1,6 @@
 import * as React from "react";
 import { mount } from "enzyme";
-import Toggle from "../Toggle";
+import Toggle from ".";
 
 function sel(testId: string): string {
   return `[data-test="${testId}"]`;
