@@ -15,14 +15,12 @@ The original source code of the provided example is [here](https://github.com/ke
 ## How to set up the project
 
 ```
-git clone git@github.com:emaren84/ts-react-parcel.git
-cd ts-react-parcel
-npm install
+git clone https://github.com/sdaves/ts-react-parcel && cd ts-react-parcel && npm i
 ```
 
 ## How to start development for the application
 
-    npm run develop
+    npm start
 
 Execute the command and you can run & test the application on `localhost:1234` in the browser.
 
@@ -47,5 +45,4 @@ The default output directory is `/dist`. You can change the destination wherever
     npm run test        # run test once
     npm run test:watch  # watch mode
 
-You have to create `__tests__` directory at the same location of files which you want to test.
 Test file's name should be `SOURCE.test.ts/tsx/js` or `SOURCE.spec.ts/tsx/js`.
